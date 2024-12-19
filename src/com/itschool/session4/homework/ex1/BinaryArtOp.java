@@ -15,15 +15,20 @@ public class BinaryArtOp {
 
         // perform calc
         double addition = num1 + num2;
-        double substraction = num1 - num2;
+        double subtraction = num1 - num2;
         double multiplication = num1 * num2;
-        double division = (num2 != 0) ? num2 / num1 : 0;
+        double division;
         double modulus = (num2 != 0) ? num2 % num1 : 0;
+        if (num1 != 0) {
+            division = num2 / num1;
+        } else {
+            division = 0;
+        }
 
         //display results
         System.out.println("Results: ");
         System.out.println("Addition: " + addition);
-        System.out.println("Subtraction: " + substraction);
+        System.out.println("Subtraction: " + subtraction);
         System.out.println("Multiplication: " + multiplication);
 
         if (num2 != 0) {
@@ -34,7 +39,5 @@ public class BinaryArtOp {
         }
 
         sc.close();
-
-
     }
 }

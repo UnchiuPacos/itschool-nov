@@ -8,13 +8,14 @@ public class IncrementDecrement2 {
         System.out.println("Enter number: ");
         int number = sc.nextInt();
 
+
         System.out.println("Original number: " + number);
 
-        int increment = number + 1;
-        System.out.println("Increment number: " + increment);
+       //increment
+        System.out.println("Incremented number: " + ++number);
 
-        int decrement = number - 1;
-        System.out.println("Decrement number: " + decrement);
+        //Decrement
+        System.out.println("Decremented number: " + --number);
 
         sc.close();
  }
